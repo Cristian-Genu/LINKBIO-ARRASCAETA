@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Ysabeau Infant", sans-serif;
+}
+.secao-banner { 
+height: 100vh; 
+}
+
+.secao-banner video{
+    position:absolute;
+    z-index:-1;
+    width:100%;
+    height: 100vh;
+    object-fit:cover;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.imgperfil{
+    background-image: url(imagens/arrascaeta-perfil.jpg);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius:100%;
+    width:200px;
+    height:200px;
+    background-position:center;
+    background-size:cover;
+}
+.container-informacao{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:65px;
+}
+.container-informacao::before{
+    content:"";
+    width: 215px;
+    height:215px;
+    position:absolute;
+    border-radius: 100%;
+    z-index:-1;
+    background:linear-gradient(#50AFE7,#FFFFFF);
+}
+
+h1{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    position:absolute;
+    bottom:5px;
+    Font-size:50px;
+    color:#FFFFFF;
+    text-shadow:3px 4px 1px #000000;
+}
+h1::before{
+    content:"";
+    width:230px;
+    height:5px;
+    background:linear-gradient(#50AFE7,#FFFFFF);
+    position:absolute;
+    bottom:2px;
+    left:75px;
+    border-radius:6px;
+}
+h1::after{
+    content:"";
+    background-image: url(imagens/verificado.png);
+    width:25px;
+    height:25px;
+    position:absolute;
+    background-repeat: no-repeat;
+    left:310px;
+    bottom:20px;
+
+}
+.container-links{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 760px;
+}
+
+.secao-banner a{
+    display: flex;
+    flex-wrap:wrap;
+    padding:10px 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#0000006c;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.img-links {
+    width: 40px;
+  }
+  
+  .container-link,p{
+padding:3px 150px;
+}
+
+  .img-links,  .sucree, .threads{
+border-radius:10px;
+  }
+  .container-links a:hover{
+ background-color:#FFFFFF;
+ color:#000000;
+  }
+  .container-estatistica{
+    background-image: url(imagens/arrascaeta.jpg_554688468.webp);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    padding:350px;
+    font-family: 'Monstserrat', sans-serif;
+  }
+  h2{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin: 15px auto;
+    Font-size:60px;
+    color:#FFFFFF;
+    text-shadow:3px 4px 1px #000000;
+}
+  .tabela-dados{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .tabela-dados th,td{
+    padding:25px;
+    text-align:center;
+  }
+  .tabela-dados tr img{
+    width: 50px;
+    display:flex;
+    position:absolute;
+    flex-wrap: wrap;
+    left:480px;
+    padding-bottom:25px;
+  }
+  .tabela-dados th{
+    font-size: 26px;
+    background-color: #50AFE7;
+    color: #ffff;
+    text-shadow: 2px 2px 1px #000000;
+  }
+  .tabela-dados tbody tr:nth-of-type(odd){
+    background-color: #ffffffcc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .tabela-dados tbody tr:nth-of-type(even){
+    background-color: #50AFE7;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  
